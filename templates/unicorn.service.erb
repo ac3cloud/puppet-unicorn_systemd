@@ -23,6 +23,7 @@ Environment="<%= "#{key}=#{value}" %>"
 ExecStart=<%= @exec_start %>
 ExecReload=/bin/kill -USR2 $MAINPID
 KillSignal=SIGQUIT
+Restart=always
 
 [Install]
 WantedBy=multi-user.target
